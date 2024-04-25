@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>妇女纲要</title>
+    <link rel="stylesheet" href="妇女纲要.css">
+</head>
+
+<body>
+    <h2>开启2022妇女篇章</h2>
+    <div class="bg">
+        <span>扬巾帼之智 聚巾帼之力 展巾帼之美</span>
+    </div>
+    <div>
+    <h1>妇女发展作为全球经济和社会发展的重要组成部分，受到国际社会的普遍重视。在过去的几十年里，国际社会为促进妇女发展与进步达成了多项协议，将妇女问题与全球政治、经济发展紧密相联成为国际社会的共识，消除经济全球化进程对妇女产生的不利影响正逐步纳入各国政府的重要议程。我国政府始终把维护妇女权益、促进妇女发展作为义不容辞的责任。2001年，国务院颁布了《中国妇女发展纲要（2001—2010年）》（以下简称“纲要”），确定了妇女与经济、妇女参与决策和管理、妇女与教育、妇女与健康、妇女与法律、妇女与环境六个优先发展领域的主要目标和策略措施。2011年颁布实施《中国妇女发展纲要（2011—2020年）》，确定了健康、教育、经济、决策和管理、社会保障、环境、法律等七个领域。2021年颁布实施《中国妇女发展纲要（2021—2030年）》，确定了妇女健康、教育、经济、参与决策和管理、社会保障、家庭建设、环境、法律等八个领域，在2022年妇女发展取得了显著成就。</h1>
+    <a href="./首页网页.html" class="button" >开启妇女篇章</a> 
+</div>
+      
+        
+    
+    <script type="text/javascript">
+        // 获取背景对象
+        const bg=document.querySelector(".bg");
+        // 监听滚轮事件
+        document.addEventListener("scroll",function(){
+            // 获取当前滚轮的位置
+            const scrollY=window.scrollY;
+            if(scrollY!=0){
+                // 滚轮位置不等于0时,修改背景的定位加上滚轮的值
+                bg.style.backgroundPosition="calc(50% + "+scrollY+"px) calc(50% + "+scrollY+"px)";
+            }else{
+                // 否则清空背景的定位
+                bg.style.backgroundPosition="";
+            }
+        })
+    </script>
+</body>
+
+</html>
